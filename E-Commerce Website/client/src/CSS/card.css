@@ -1,0 +1,271 @@
+.body{
+    scroll-behavior: smooth;
+}
+#root{
+    /* background-color: rgba(255, 255, 255, 0.623); */
+}
+.mobilespage{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pageheading{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.pageheading h1{
+    color: red;
+    font-family: cursive;
+    font-size: 50px;
+    font-style: italic;
+}
+.card{
+    background-color: white;
+    box-shadow: 0 0  5px black;
+    width: 80%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.card:hover{
+    z-index:1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.card_img{
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_img img{
+    width: 50%;
+    height: 100%;
+
+}
+.card_info1{
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
+.card_title{
+    color: blue;
+    font-size: 35px;
+    font-weight: 200;
+}
+.card_info1 ul{
+    list-style-type: disc;
+    margin:10px 15px;
+}
+.card_info1 ul li{
+    padding: 5px;
+    font-size: 20px;
+}
+.card_book{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card_book button{
+    font-size: 25px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom:20px ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    width: 37%;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+#b1{
+    background-color: #fb641b;
+
+}
+#b2{
+    background-color: #ff9f00;
+}
+.card_img_laptop{
+    width: 20%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.card_img_laptop img{
+    width: 80%;
+}
+
+/*----------------------------------  Responsive -------------------------------------------*/
+
+
+
+@media all and (max-width:1800px){
+    .card_book button{
+        width: 60%;
+        font-size: 20px;
+    }
+    .card_img img{
+        width: 60%;
+    }
+}
+@media all and (max-width:1300px){
+    .card{
+        flex-direction: column;
+    }
+    .card_info1{
+        width: 80%;
+    }
+    .card_book{
+        width: 80%;
+        flex-direction: row;
+    }
+    .card_book button{
+        width: 30%;
+        margin: 15px;
+    }
+    .card_img{
+        width: 40%;
+    }
+    .card_img_laptop{
+        width: 40%;
+    }
+}
+@media all and (max-width:800px){
+
+    .card_info1 ul{
+        display: block;
+    }
+
+    .card_img{
+        width: 40%;
+    }
+    .card_info1{
+        height: 100%;
+    }
+    .card_info1 h1{
+        font-size: 15px;
+    }
+    .card_info1 ul li{
+        font-size: 15px;
+    }
+    .card_book button{
+        width: 70%;
+        font-size: 15px;
+    }
+    .card_img_laptop{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_img_laptop img{
+        width: 80%;
+    }
+    .card_book{
+        flex-direction: column;
+    }
+
+}
+
+@media all and (max-width:450px){
+
+   .card_img{
+       width: 70%;
+   }
+   .card_info1 {
+       width: 100%;
+   }
+   .card_info1 h3{
+       font-size: 20px;
+   }
+   .card_info1 ul{
+       width: 100%;
+   }
+   .card_book{
+       width: 100%;
+       flex-direction: column;
+   }
+   .card_book button{
+       width: 75%;
+       margin: 5px;
+       font-size: 15px;
+   }
+   .pageheading h1{
+       font-size: 25px;
+   }
+
+}
+
+.card_img_fridge img{
+    width: 90%;
+}
+
+
+@media all and (max-width:380px){
+
+    
+
+    .card_book {
+        flex-direction: column;
+
+    }
+    .card_book button{
+        width: 70%;
+    }
+    .laptoppage{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 4%;
+    }
+
+ 
+ }
+
+
+
+ @media all and (max-width:350px){
+    .card{
+        margin-bottom: 4%;
+    }
+
+   .card_img{
+       width: 70%;
+   }
+ 
+ }

@@ -1,0 +1,53 @@
+const Sdata=[
+    {
+        id:1,
+        name:"Electronics",
+        image:'images/Headlist/electronics.png',
+        link:"/electronics"
+    },
+    {
+        id:2,
+        name:"Beauty,Toys",
+        image:'images/Headlist/beauty.png',
+        link:"/beautytoys"
+    },
+    {
+        id:3,
+        name:"Fashion",
+        image:'images/Headlist/fashion.png',
+        link:"/fashion"
+    },
+    {
+        id:4,
+        name:"Grocery",
+        image:'images/Headlist/grocery.png',
+        link:"/grocery"
+    },
+    {
+        id:5,
+        name:"Mobiles",
+        image:'images/Headlist/mobiles.png',
+        link:"/mobiles"
+    },
+    {
+        id:6,
+        name:"Appliances",
+        image:'images/Headlist/appliances.png',
+        link:"/appliances"
+    },
+    {
+        id:7,
+        name:"Home",
+        image:'images/Headlist/home.png',
+        link:"/homedecoration"
+    },
+    {
+        id:8,
+        name:"offers",
+        image:'images/Headlist/topoffers.png',
+        link:"/electronics"
+    }
+];
+
+
+export default Sdata;

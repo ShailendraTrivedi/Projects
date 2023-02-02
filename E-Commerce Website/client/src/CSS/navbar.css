@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+nav{
+    background: #1b1b1b;
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-left: 20px;
+}
+
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    /* float: left; */
+    display: inline-block;
+    background: #1b1b1b;
+    margin:0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 9px 15px;
+    
+}
+nav ul li a:hover{
+    transition: all 0.2s linear;
+    color: #97b8b8;
+    box-shadow: 0 0 10px #97b8b8,0 0 5px #66ffff;
+}
+.burger{
+    /* display: none; */
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+.icon,#btn{
+    display: none;
+}
+
+#cartimg{
+    width: 10%;
+}
+
+
+@media all and (max-width:968px){
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li a:hover{
+        box-shadow:  0 0 10px #97b8b8,0 0 5px #66ffff;
+    }
+    ul{
+        display: none;
+    }
+    
+    .icon{
+        padding: 0;
+        display: block;
+        color: white;
+        position: absolute;
+        color: white;
+        right: 40px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    [id^=btn]:checked+ul{
+        display: block;
+    }
+    
+    
+    
+}
+
+
+
+
+
+ 

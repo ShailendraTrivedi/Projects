@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupbox{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 26px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.boxsign1{
+    width: 50%;
+    margin-top: 10%;
+    
+}
+.headingsign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    font-size: 25px;
+}
+.signdata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.sign-up-form{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+
+.inputfield{
+    margin-bottom: 30px;    
+    width: 80%;
+    height: 55px;
+    background-color: #f0f0ff;
+    margin-top: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+    margin-bottom: 5    0px;
+}
+
+.inputfield input{
+    background: none;
+    outline: none;
+    border:none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+
+.inputfield input::placeholder{
+    color: rgba(2, 2, 2, 0.678);
+    font-weight: 500;
+}
+
+
+
+
+
+.boxsign2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.deskimg{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.deskimg img{
+    width: 60%;
+}
+#show{
+    visibility: hidden;
+}
+.clicklogin{
+    font-size: 25px;
+}
+.clicklogin a{
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.clicklogin a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+@media all and (max-width:1000px){
+    .container1{
+        height: 120vh;
+    }
+    .signupbox{
+        flex-direction: column-reverse;
+
+    }
+
+    .boxsign2{
+        width: 65%;
+    }
+    .boxsign1{
+        width: 84%;
+    }
+    #show1{
+        display: none;
+    }
+    #show{
+        visibility: visible;
+        margin-top: -10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media all and (max-width:450px) {
+    .container1{
+        height: 150vh;
+    }
+    .signupbox{
+        width: 82%;
+    }
+
+    .boxsign2{
+        width: 120%;
+    }
+    .headingsign{
+        font-size: 20px;
+    }
+    .inputfield{
+        width: 100%;
+    }
+    .inputfield input{
+        font-size: 30px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .clicklogin{
+        font-size: 14px;
+    }
+
+
+    
+}
+@media all and (max-width:360px){
+    .container1{
+        height: 170vh;
+    }
+    .signupbox{
+        width: 90%;
+    }
+    .inputfield input{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .inputfield input::placeholder{
+        font-size: 10px;
+    }
+}
