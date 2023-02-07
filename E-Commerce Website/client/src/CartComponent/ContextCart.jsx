@@ -8,6 +8,7 @@ import {Clear} from './../Reducer/Functions';
 import {UserContext} from './../Component/App';
 
 
+
 const ContextCart = () => {
   const {  setPayment } = useContext(UserContext);
   // cosumer

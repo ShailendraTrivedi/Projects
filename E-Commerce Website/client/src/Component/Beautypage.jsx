@@ -1,7 +1,7 @@
 import React from 'react'
 import Detailsbox from './Detailsbox';
 import {Beauty} from '../Data/Beautycards';
-import {Laptopcard} from './Card';
+import {Laptopcard} from './Card'
 
 const Beautypage=()=>{
     return (
